@@ -11,9 +11,8 @@
 
 <body>
     <br>
-    <h1>Service ticket</h1>
+    <h1><center>Service ticket</center></h1>
     <br>
-    <!--Formulario principal-->
     <form>
         <div class="form-row">
             <div class="col-md-2 mb-3">
@@ -39,38 +38,25 @@
                 </div>
             </div>
         </div>
-        <div class="form-row">
-            <div class="col-md-3 mb-3">
-                <label for="validationServer03">City:</label>
-                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
-                <div class="c">
-                    Please provide a valid city.
-                </div>
+        <div class="row">
+            <div class="col-md-2">
+              <label for="department">Department:</label>
+              <select class="custom-select" id="department">
+                <option selected>Open this select menu</option>
+                <option value="1">IT</option>
+                <option value="2">HR</option>
+                <option value="3">Delivery</option>
+              </select>
             </div>
-            <div class="col-md-3 mb-3">
-                <label for="validationServer04">State:</label>
-                <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
-                <div class="invalid-feedback">
-                    Please provide a valid state.
-                </div>
-            </div>
-            <div class="col-md-2 mb-3">
-                <label for="validationServer05">Zip:</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
-                <div class="invalid-feedback">
-                    Please provide a valid zip.
-                </div>
-            </div>
-        </div>
-        <!--Adjuntos -->
-        <div class="custom-file col-md-3">
-            <label>Atachments:</label>
-            <div class="custom-file">
+
+            <div class="col-md-3">
+              <label for="attachments">Attachments:</label>
+              <div class="custom-file">
                 <input type="file" class="custom-file-input" id="customFile">
                 <label class="custom-file-label" for="customFile">Choose file</label>
+              </div>
             </div>
-        </div>
-        <br>
+          </div>
         <br>
         <div class="form-group col-md-6">
             <div class="form-check">
@@ -83,7 +69,7 @@
                 </div>
                 <br>
             </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <button class="btn btn-primary" type="submit">Submit ticket</button>
         </div>
     </form>
 
